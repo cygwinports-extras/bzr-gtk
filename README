@@ -4,12 +4,12 @@ bzr-gtk is a plugin for Bazaar that aims to provide GTK+
 interfaces to most Bazaar operations.
 
 Runtime requirements:
-  bzr-0.16-1
-  python-2.5.1-1
+  bzr-0.17-1
+  python-2.5.1-3
   python-cairo-1.4.0-1
   python-dbus-0.81.0-1
   python-gobject2-2.12.3-2
-  python-gtk2-2.10.4-2
+  python-gtk2-2.10.5-1
   python-nautilus-0.4.3-2
 
 Build requirements:
@@ -26,22 +26,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack bzr-gtk-0.16.0-X-src.tar.bz2
+  unpack bzr-gtk-0.17.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bzr-gtk-0.16.0-X.cygport all
+  cygport ./bzr-gtk-0.17.0-X.cygport all
 
 This will create:
-  /usr/src/bzr-gtk-0.16.0-X-src.tar.bz2
-  /usr/src/bzr-gtk-0.16.0-X.tar.bz2
+  /usr/src/bzr-gtk-0.17.0-X-src.tar.bz2
+  /usr/src/bzr-gtk-0.17.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/olive-gtk
-  /usr/lib/python2.5/site-packages/bzr_gtk-0.16.0-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/bzr_gtk-0.17.0-py2.5.egg-info
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/__init__.pyo
@@ -162,6 +162,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_tortoise_bzr.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_tortoise_bzr.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_tortoise_bzr.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_viz.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_viz.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_viz.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tortoise-bzr.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tortoise-bzr.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tortoise-bzr.pyo
@@ -217,32 +220,35 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/olive/rename.pyc
   /usr/lib/python2.5/site-packages/olive/rename.pyo
   /usr/share/applications/olive-gtk.desktop
-  /usr/share/doc/Cygwin/bzr-gtk-0.16.0.README
-  /usr/share/doc/bzr-gtk-0.16.0/AUTHORS
-  /usr/share/doc/bzr-gtk-0.16.0/COPYING
-  /usr/share/doc/bzr-gtk-0.16.0/HACKING
-  /usr/share/doc/bzr-gtk-0.16.0/NEWS
-  /usr/share/doc/bzr-gtk-0.16.0/README
-  /usr/share/doc/bzr-gtk-0.16.0/TODO
+  /usr/share/doc/Cygwin/bzr-gtk-0.17.0.README
+  /usr/share/doc/bzr-gtk-0.17.0/AUTHORS
+  /usr/share/doc/bzr-gtk-0.17.0/COPYING
+  /usr/share/doc/bzr-gtk-0.17.0/HACKING
+  /usr/share/doc/bzr-gtk-0.17.0/NEWS
+  /usr/share/doc/bzr-gtk-0.17.0/README
+  /usr/share/doc/bzr-gtk-0.17.0/TODO
   /usr/share/olive/cmenu.ui
-  /usr/share/olive/icons/commit.png
-  /usr/share/olive/icons/commit16.png
-  /usr/share/olive/icons/diff.png
-  /usr/share/olive/icons/diff16.png
-  /usr/share/olive/icons/log.png
-  /usr/share/olive/icons/log16.png
-  /usr/share/olive/icons/pull.png
-  /usr/share/olive/icons/pull16.png
-  /usr/share/olive/icons/push.png
-  /usr/share/olive/icons/push16.png
-  /usr/share/olive/icons/refresh.png
+  /usr/share/olive/commit.png
+  /usr/share/olive/commit16.png
+  /usr/share/olive/diff.png
+  /usr/share/olive/diff16.png
+  /usr/share/olive/log.png
+  /usr/share/olive/log16.png
   /usr/share/olive/olive.glade
   /usr/share/olive/oliveicon2.png
+  /usr/share/olive/pull.png
+  /usr/share/olive/pull16.png
+  /usr/share/olive/push.png
+  /usr/share/olive/push16.png
+  /usr/share/olive/refresh.png
   /usr/share/pixmaps/olive-gtk.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.17.0-1 -----
+Version bump for bzr-0.17.
 
 ----- version 0.16.0-1 -----
 Version bump for bzr-0.16.

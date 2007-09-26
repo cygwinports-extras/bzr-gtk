@@ -4,7 +4,7 @@ bzr-gtk is a plugin for Bazaar that aims to provide GTK+
 interfaces to most Bazaar operations.
 
 Runtime requirements:
-  bzr-0.18-1
+  bzr-0.91-1
   python-2.5.1-3
   python-cairo-1.4.0-1
   python-dbus-0.81.1-1
@@ -21,30 +21,33 @@ Canonical website:
   http://bazaar-vcs.org/bzr-gtk
 
 Canonical download:
-  http://samba.org/~jelmer/bzr/
+  https://launchpad.net/bzr-gtk/
 
 -------------------------------------------
 
 Build instructions:
-  unpack bzr-gtk-0.18.0-X-src.tar.bz2
+  unpack bzr-gtk-0.91.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bzr-gtk-0.18.0-X.cygport all
+  cygport ./bzr-gtk-0.91.0-X.cygport all
 
 This will create:
-  /usr/src/bzr-gtk-0.18.0-X-src.tar.bz2
-  /usr/src/bzr-gtk-0.18.0-X.tar.bz2
+  /usr/src/bzr-gtk-0.91.0-X-src.tar.bz2
+  /usr/src/bzr-gtk-0.91.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/olive-gtk
-  /usr/lib/python2.5/site-packages/bzr_gtk-0.18.0-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/bzr_gtk-0.91.0-py2.5.egg-info
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/about.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/about.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/about.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/annotate/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/annotate/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/annotate/__init__.pyo
@@ -63,6 +66,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/branch.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/branch.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/branch.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/branchbox.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/branchbox.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/branchbox.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/checkout.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/checkout.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/checkout.pyo
@@ -93,12 +99,18 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/merge.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/merge.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/merge.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/mergedirective.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/mergedirective.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/mergedirective.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/missing.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/missing.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/missing.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/nautilus-bzr.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/nautilus-bzr.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/nautilus-bzr.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/notify.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/notify.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/notify.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/olive/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/olive/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/olive/__init__.pyo
@@ -144,6 +156,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revbrowser.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revbrowser.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revbrowser.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revidbox.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revidbox.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revidbox.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revisionmenu.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revisionmenu.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/revisionmenu.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/status.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/status.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/status.pyo
@@ -153,6 +171,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_diff.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_diff.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_diff.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_history.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_history.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/gtk/tests/test_history.pyo
@@ -219,33 +240,38 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/olive/rename.py
   /usr/lib/python2.5/site-packages/olive/rename.pyc
   /usr/lib/python2.5/site-packages/olive/rename.pyo
+  /usr/share/applications/bazaar-properties.desktop
+  /usr/share/applications/bzr-notify.desktop
   /usr/share/applications/olive-gtk.desktop
-  /usr/share/doc/Cygwin/bzr-gtk-0.18.0.README
-  /usr/share/doc/bzr-gtk-0.18.0/AUTHORS
-  /usr/share/doc/bzr-gtk-0.18.0/COPYING
-  /usr/share/doc/bzr-gtk-0.18.0/HACKING
-  /usr/share/doc/bzr-gtk-0.18.0/NEWS
-  /usr/share/doc/bzr-gtk-0.18.0/README
-  /usr/share/doc/bzr-gtk-0.18.0/TODO
+  /usr/share/doc/Cygwin/bzr-gtk-0.91.0.README
+  /usr/share/doc/bzr-gtk-0.91.0/AUTHORS
+  /usr/share/doc/bzr-gtk-0.91.0/COPYING
+  /usr/share/doc/bzr-gtk-0.91.0/HACKING
+  /usr/share/doc/bzr-gtk-0.91.0/NEWS
+  /usr/share/doc/bzr-gtk-0.91.0/README
+  /usr/share/doc/bzr-gtk-0.91.0/TODO
   /usr/share/olive/cmenu.ui
-  /usr/share/olive/commit.png
-  /usr/share/olive/commit16.png
-  /usr/share/olive/diff.png
-  /usr/share/olive/diff16.png
-  /usr/share/olive/log.png
-  /usr/share/olive/log16.png
+  /usr/share/olive/icons/commit.png
+  /usr/share/olive/icons/commit16.png
+  /usr/share/olive/icons/diff.png
+  /usr/share/olive/icons/diff16.png
+  /usr/share/olive/icons/log.png
+  /usr/share/olive/icons/log16.png
+  /usr/share/olive/icons/oliveicon2.png
+  /usr/share/olive/icons/pull.png
+  /usr/share/olive/icons/pull16.png
+  /usr/share/olive/icons/push.png
+  /usr/share/olive/icons/push16.png
+  /usr/share/olive/icons/refresh.png
   /usr/share/olive/olive.glade
-  /usr/share/olive/oliveicon2.png
-  /usr/share/olive/pull.png
-  /usr/share/olive/pull16.png
-  /usr/share/olive/push.png
-  /usr/share/olive/push16.png
-  /usr/share/olive/refresh.png
   /usr/share/pixmaps/olive-gtk.png
 
 ------------------
 
 Port Notes:
+
+----- version 0.91.0-1 -----
+Version bump for bzr-0.91.
 
 ----- version 0.18.0-1 -----
 Version bump for bzr-0.18.

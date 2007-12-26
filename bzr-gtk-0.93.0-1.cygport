@@ -1,0 +1,5 @@
+inherit distutils
+
+DESCRIPTION="Bazaar GTK+ frontend"
+HOMEPAGE="http://bazaar-vcs.org/bzr-gtk"
+SRC_URI="https://launchpad.net/${PN}/${PV_MAJ_MIN}/${PV}/+download/${P}.tar.gz"

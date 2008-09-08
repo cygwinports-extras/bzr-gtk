@@ -1,5 +1,5 @@
 category: Devel Gnome
-requires: bzr python python-cairo python-dbus python-gobject2 python-gtk2 python-nautilus
+requires: bzr python python-cairo python-dbus python-gconf2 python-gobject2 python-gtk2 python-gtksourceview python-notify
 sdesc: "Bazaar-VCS GTK+ interface"
 ldesc: "bzr-gtk is a plugin for Bazaar that aims to provide GTK+
 interfaces to most Bazaar operations."

@@ -1,0 +1,14 @@
+inherit distutils
+
+NAME="bzr-gtk"
+VERSION=0.104.0
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Bazaar-VCS GTK+ interface"
+DESCRIPTION="bzr-gtk is a plugin for Bazaar that aims to provide GTK+
+interfaces to most Bazaar operations."
+HOMEPAGE="http://bazaar-vcs.org/bzr-gtk"
+SRC_URI="http://launchpad.net/${PN}/gtk3/${PV}/+download/${P}.tar.gz"
+PATCH_URI="0.104.0-build.patch"
+
+REQUIRES="girepository-Gtk3.0 girepository-GtkSource3.0 girepository-Notify0.7"

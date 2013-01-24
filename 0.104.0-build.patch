@@ -1,0 +1,12 @@
+--- origsrc/bzr-gtk-0.104.0/setup.py	2012-04-10 07:01:14.000000000 -0500
++++ src/bzr-gtk-0.104.0/setup.py	2013-01-23 19:30:08.348695600 -0600
+@@ -166,8 +166,7 @@ if __name__ == '__main__':
+             "bzrlib.plugins.gtk.branchview",
+             "bzrlib.plugins.gtk.preferences",
+         ],
+-        data_files=[('share/bzr-gtk', ['credits.pickle']),
+-                    ('share/bzr-gtk/icons', ['icons/commit.png',
++        data_files=[('share/bzr-gtk/icons', ['icons/commit.png',
+                                              'icons/commit16.png',
+                                              'icons/diff.png',
+                                              'icons/diff16.png',
